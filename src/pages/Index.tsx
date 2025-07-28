@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation"
 import { HeroSection } from "@/components/HeroSection"
 import { TreatmentBenefits } from "@/components/TreatmentBenefits"
+import { TreatmentSteps } from "@/components/TreatmentSteps"
 import { TestimonialSection } from "@/components/TestimonialSection"
 import { PricingSection } from "@/components/PricingSection"
 import { ContactForm } from "@/components/ContactForm"
@@ -132,6 +133,9 @@ const Index = () => {
       {/* Treatment Benefits */}
       <TreatmentBenefits />
 
+      {/* Treatment Steps */}
+      <TreatmentSteps />
+
       {/* Clinical Team */}
       <section className="py-16 bg-gradient-soft">
         <div className="container mx-auto px-4">
@@ -183,7 +187,9 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <TestimonialSection />
+      <section id="testimonials">
+        <TestimonialSection />
+      </section>
 
       {/* Pricing */}
       <PricingSection />
@@ -236,7 +242,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-wellness-pink-light">
+      <section id="contact" className="py-16 bg-wellness-pink-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -271,11 +277,11 @@ const Index = () => {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>+44 XXX XXX XXXX</span>
+                  <span>0800 488 0909</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>info@thewomenshealthclinic.com</span>
+                  <span>hello@thewomenshealth.clinic</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
@@ -288,7 +294,9 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <div className="space-y-2">
                 <a href="#treatments" className="block hover:text-wellness-pink transition-colors">Treatments</a>
+                <a href="#treatment-steps" className="block hover:text-wellness-pink transition-colors">Treatment Steps</a>
                 <a href="#about" className="block hover:text-wellness-pink transition-colors">About Us</a>
+                <a href="#testimonials" className="block hover:text-wellness-pink transition-colors">Testimonials</a>
                 <a href="#pricing" className="block hover:text-wellness-pink transition-colors">Pricing</a>
                 <a href="#faq" className="block hover:text-wellness-pink transition-colors">FAQ</a>
               </div>

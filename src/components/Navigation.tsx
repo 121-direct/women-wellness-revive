@@ -7,6 +7,7 @@ export const Navigation = () => {
 
   const navItems = [
     { name: "Treatments", href: "#treatments" },
+    { name: "Treatment Steps", href: "#treatment-steps" },
     { name: "About Us", href: "#about" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "Pricing", href: "#pricing" },
@@ -41,13 +42,17 @@ export const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="text-muted-foreground">
-              <Phone className="h-4 w-4 mr-2" />
-              +44 XXX XXX XXXX
+            <Button variant="ghost" size="sm" className="text-muted-foreground" asChild>
+              <a href="tel:08004880909">
+                <Phone className="h-4 w-4 mr-2" />
+                0800 488 0909
+              </a>
             </Button>
-            <Button variant="wellness" size="sm">
-              <Calendar className="h-4 w-4 mr-2" />
-              Book Now
+            <Button variant="wellness" size="sm" asChild>
+              <a href="#contact">
+                <Calendar className="h-4 w-4 mr-2" />
+                Book Now
+              </a>
             </Button>
           </div>
 
@@ -78,13 +83,17 @@ export const Navigation = () => {
                 </a>
               ))}
               <div className="px-4 py-2 space-y-2">
-                <Button variant="outline" size="sm" className="w-full">
-                  <Phone className="h-4 w-4 mr-2" />
-                  Call Now
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                  <a href="tel:08004880909">
+                    <Phone className="h-4 w-4 mr-2" />
+                    0800 488 0909
+                  </a>
                 </Button>
-                <Button variant="wellness" size="sm" className="w-full">
-                  <Calendar className="h-4 w-4 mr-2" />
-                  Book Consultation
+                <Button variant="wellness" size="sm" className="w-full" asChild>
+                  <a href="#contact">
+                    <Calendar className="h-4 w-4 mr-2" />
+                    Book Consultation
+                  </a>
                 </Button>
               </div>
             </div>
